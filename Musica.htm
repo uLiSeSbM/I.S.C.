@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #000000;
+}
+.style8 {
+	font-size: 16px;
+	color: #999999;
+}
+.style9 {font-weight: bold; font-style: italic; color: #00FF00; font-size: 36px;}
+.style10 {font-family: Georgia, "Times New Roman", Times, serif}
+.style11 {font-size: 16px; color: #999999; font-family: Georgia, "Times New Roman", Times, serif; }
+.style12 {
+	font-size: 16px;
+	color: #999999;
+	font-style: italic;
+	font-weight: bold;
+}
+body,td,th {
+	color: #003399;
+}
+.style17 {font-weight: bold; font-style: italic; color: #00FF00; font-size: 36px; font-family: Georgia, "Times New Roman", Times, serif; }
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+<body>
+<div id="Layer4" style="position:absolute; left:378px; top:27px; width:153px; height:49px; z-index:4"><span class="style17"><b>
+
+<script>
+
+/*
+RAINBOW TEXT Script by Matt Hedgecoe (c) 2002
+Featured on JavaScript Kit
+For this script, visit http://www.javascriptkit.com
+*/
+
+// ********** MAKE YOUR CHANGES HERE
+
+var text="MUSICA" // YOUR TEXT
+var speed=80 // SPEED OF FADE
+
+// ********** LEAVE THE NEXT BIT ALONE!
+
+
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script>
+</b>
+
+<p align="center"><br /><a href=</a></p></span></div>
+<div align="left"></div>
+<div id="Layer1" style="position:absolute; left:869px; top:12px; width:393px; height:217px; z-index:1"><img src="6f08ce865655b45e1343124cda6c653c.gif" width="384" height="222"></div>
+<div id="Layer2" style="position:absolute; left:463px; top:101px; width:368px; height:171px; z-index:2">
+  <div align="center">
+    <p align="left">
+      <embed src="Hooverphonic%20%20Mad%20About%20You%20Live.mp3" width="367" height="99"></embed>
+    </p>
+    <p align="center"><em><strong><span class="style11">Mad About You - Hooverphonic </span></strong></em></p>
+    <p>&nbsp;</p>
+  </div>
+</div>
+<div id="Layer3" style="position:absolute; left:872px; top:234px; width:389px; height:207px; z-index:3"><img src="eb0287f0ceaeec70a69b936de370d2e7.gif" width="369" height="204"></div>
+<div align="center" class="style10">
+  <div align="justify"><span class="style9">  </span>
+  </div>
+  <div id="Layer2" style="position:absolute; left:78px; top:103px; width:368px; height:172px; z-index:2">
+    <p align="left" class="style8">
+      <embed src="Aretha%20Franklin%20%20A%20Deeper%20Love.mp3" width="366" height="96"></embed>
+</p>
+    <p class="style12">A Deeper Love - Aretha Franklin</p>
+  </div>
+  <div id="Layer2" style="position:absolute; left:75px; top:310px; width:368px; height:172px; z-index:2">
+    <p align="left">
+      <embed src="Oliver%20Shanti%20%20Friends%20%20Shaman.mp3" width="369" height="95"></embed>
+</p>
+    <p><em><strong><span class="style8">Shaman - Oliver Shanti </span></strong></em></p>
+  </div>
+  <div id="Layer2" style="position:absolute; left:465px; top:310px; width:368px; height:172px; z-index:2">
+    <p align="left">
+      <embed src="Mon%20Laferte%20%20Nothing%20Else%20Matters.mp3" width="370" height="93"></embed>
+    </p>
+    <p><em><strong><span class="style8">Nothing Else Matters - Mon Laferte </span></strong></em></p>
+  </div>
+</div>
+</body>
+</html>
